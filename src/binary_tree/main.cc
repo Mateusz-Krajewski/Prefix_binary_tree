@@ -8,6 +8,7 @@
  * @copyright Copyright (c) 2025
  * 
  */
+
 #include "lib.h"
 void print_result(const char* test_name, int result) {
     printf("%s: %s\n", test_name, result == 0 ? "PASSED" : "FAILED");
@@ -24,6 +25,12 @@ int main() {
         print_result("Wyszukiwanie 192.168.0.1", 0);
     } else {
         print_result("Wyszukiwanie 192.168.0.1", -1);
+    }
+    found = search(node, 0xC1A80001);  // 193.168.0.1
+    if (found != NULL && (found->value >> 2) == 24) {
+        print_result("Wyszukiwanie 193.168.0.1", -1);
+    } else {
+        print_result("Wyszukiwanie 193.168.0.1", 0);
     }
 
     result = del(0xC0A80000, 24);  // 192.168.0.0/24

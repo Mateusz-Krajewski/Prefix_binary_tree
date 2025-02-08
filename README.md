@@ -1,8 +1,8 @@
 # Instrukcja
-## Uruchomienie kodu testowego - run.sh
-## Uruchomienie kodu testowego z valgrind - run_with_valgrind.sh
-## Uruchomienie UT - run_test.sh
-## Uruchomienie benchmarkow wymaga [Bazel](https://github.com/bazelbuild/bazelisk/releases/tag/v1.25.0) (wyniki benchmarkow na wykresie ponizej)
+- Uruchomienie kodu testowego - run.sh
+- Uruchomienie kodu testowego z valgrind - run_with_valgrind.sh
+- Uruchomienie UT - run_test.sh
+- Uruchomienie benchmarkow wymaga [Bazel](https://github.com/bazelbuild/bazelisk/releases/tag/v1.25.0) (wyniki benchmarkow na wykresie ponizej)
 
 
 # Model nr 1:
@@ -22,9 +22,8 @@
 # Model nr 3 ( Docelowy ):
 ### Model przechowujący adres sieci jako drzewo binarne, lookup table dla maski
 - zmiana struktury na drzewo binarne
-- dla malych zbiorów prefix zajmuje wiecej pamięci niż model nr2, dla duzych zbiorow zajmowana pamięc jest podobna
 - lookup table dla maski
-- liniowa zlozonosc obliczeniowa
+- złożoność O(n)
 
 
 ![img](img/comp.png)

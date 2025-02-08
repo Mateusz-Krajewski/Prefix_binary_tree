@@ -1,3 +1,13 @@
+/**
+ * @file benchmark.cc
+ * @author Mateusz Krajewski (matikrajek42@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2025-02-08
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include <benchmark/benchmark.h>
 #include "src/binary_tree/lib.h"
 
